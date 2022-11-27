@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 为浮动元素父元素动态加载高度 */
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            /* IE6、7 专有 */
+            *zoom: 1;
+        }
+
+
+        #content {
+            background-color: blue;
+            width: 600px;
+
+        }
+
+        #content .goods {
+
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            float: left;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="content" class="clearfix">
+
+        <div class="goods">
+
+        </div>
+        <div class="goods">
+
+        </div>
+        <div class="goods">
+
+        </div>
+        <div class="goods">
+
+        </div>
+        <div class="goods">
+
+        </div>
+        <div class="goods">
+
+        </div>
+        <div class="goods">
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
